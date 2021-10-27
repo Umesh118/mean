@@ -1,0 +1,51 @@
+<div class="container">
+    <form #f="ngForm" (ngSubmit)="sendFeedback()">
+        <div class="mb-3">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" [(ngModel)]="_rating"
+                    id="inlineRadio1" value="1">
+                <label class="form-check-label" for="inlineRadio1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" [(ngModel)]="_rating"
+                    id="inlineRadio2" value="2">
+                <label class="form-check-label" for="inlineRadio2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" [(ngModel)]="_rating"
+                    id="inlineRadio3" value="3">
+                <label class="form-check-label" for="inlineRadio3">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" [(ngModel)]="_rating"
+                    id="inlineRadio3" value="4">
+                <label class="form-check-label" for="inlineRadio3">4</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" [(ngModel)]="_rating"
+                    id="inlineRadio3" value="5">
+                <label class="form-check-label" for="inlineRadio3">5</label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="_feedback"
+                name="feedback"></textarea>
+        </div>
+        <div class="mb-3">
+            <input type="submit" class="btn btn-success" value="Send">
+        </div>
+    </form>
+    <!-- <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div> -->
+
+</div>
+
+<hr>
+<div class="container">
+    <div *ngFor="let feedback of feedbacks">
+        {{feedback.feedback}} means {{feedback.rating}}
+    </div>
+</div>
