@@ -8,11 +8,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ApiService } from './services/api.service';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
-  declarations: [AppComponent, ContactComponent, FeedbackComponent, LoginComponent],
+  declarations: [
+    AppComponent,
+    ContactComponent,
+    FeedbackComponent,
+    LoginComponent,
+    RegisterComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
-  providers: [],
+  providers: [ApiService, AuthService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

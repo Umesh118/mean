@@ -1,21 +1,23 @@
-<div class="container">
-    <form #f="ngForm" (ngSubmit)="addContact()">
-        <div class="form_group">
-            <label>First Name</label>
-            <input type="text" [(ngModel)]="first_name" name="first_name" id="first_name" class="form-control">
-        </div>
-        <div class="form_group">
-            <label>Last Name</label>
-            <input type="text" [(ngModel)]="last_name" name="last_name" id="last_name" class="form-control">
-        </div>
-        <div class="form_group">
-            <label>Phone </label>
-            <input type="text" [(ngModel)]="phone" name="phone" id="phone" class="form-control">
-        </div>
-        <br>
-        <input type="submit" value="Add" class="btn btn-success">
-    </form>
-</div>
+<body>
+    <div class="container">
+        <form #f="ngForm" (ngSubmit)="addContact()">
+            <div class="form_group">
+                <label>First Name</label>
+                <input type="text" [(ngModel)]="first_name" name="first_name" id="first_name" class="form-control">
+            </div>
+            <div class="form_group">
+                <label>Last Name</label>
+                <input type="text" [(ngModel)]="last_name" name="last_name" id="last_name" class="form-control">
+            </div>
+            <div class="form_group">
+                <label>Phone </label>
+                <input type="text" [(ngModel)]="phone" name="phone" id="phone" class="form-control">
+            </div>
+            <br>
+            <input type="submit" value="Add" class="btn btn-success">
+        </form>
+    </div>
+</body>
 <br>
 <hr>
 <div class="container">
