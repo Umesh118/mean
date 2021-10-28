@@ -6,7 +6,7 @@ const feedSchema = new mongoose.Schema(
     rating: String,
   },
   {
-    collection: "contacts",
+    collection: "feedback",
   }
 );
 
