@@ -30,7 +30,7 @@ export class RegisterComponent implements OnInit {
         // console.log(res);
         // this.auth.setDataInLocalStorage('userData', JSON.stringify(res.data));
         this.auth.setDataInLocalStorage('token', res.token);
-        this.router.navigate(['/login']);
+        this.router.navigate(['/home']);
         // } else {
         //   // console.log(res);
         // }

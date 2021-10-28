@@ -10,22 +10,22 @@
                             <div class="form-group">
                                 <label for="first_name" class="text-info">First Name:</label><br>
                                 <input type="text" name="first_name" id="first_name" class="form-control"
-                                    [(ngModel)]="registerData.first_name">
+                                    [(ngModel)]="registerData.first_name" required>
                             </div>
                             <div class="form-group">
                                 <label for="last_name" class="text-info">Last Name:</label><br>
                                 <input type="text" name="last_name" id="last_name" class="form-control"
-                                    [(ngModel)]="registerData.last_name">
+                                    [(ngModel)]="registerData.last_name" required>
                             </div>
                             <div class="form-group">
                                 <label for="email" class="text-info">Email:</label><br>
-                                <input type="text" name="email" id="email" class="form-control"
-                                    [(ngModel)]="registerData.email">
+                                <input type="email" name="email" id="email" class="form-control"
+                                    [(ngModel)]="registerData.email" required>
                             </div>
                             <div class="form-group">
                                 <label for="password" class="text-info">Password:</label><br>
                                 <input type="password" name="password" id="password" class="form-control"
-                                    [(ngModel)]="registerData.password">
+                                    [(ngModel)]="registerData.password" required>
                             </div>
 
                             <div class="form-group">

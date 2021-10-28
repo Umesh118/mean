@@ -4,10 +4,12 @@ var Login = require("../models/login");
 var User = require("../models/registerUser");
 var jwt = require("jsonwebtoken");
 
+// verifying logins
+
 // retrieving Logins
 router.post("/", (req, res) => {
   let userData = req.body;
-  let user = new Login(userData);
+  // let user = new Login(userData);
 
   //   user.save((err, registeredUser) => {
   //     if (err) {

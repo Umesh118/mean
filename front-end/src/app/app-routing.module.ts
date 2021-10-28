@@ -16,13 +16,12 @@ const routes: Routes = [
     children: [
       { path: '', component: LoginComponent },
       { path: 'login', component: LoginComponent },
+      { path: 'register', component: RegisterComponent },
       { path: 'home', component: HomeComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'feedback', component: FeedbackComponent },
     ],
   },
-
-  { path: 'register', component: RegisterComponent },
 ];
 
 @NgModule({
