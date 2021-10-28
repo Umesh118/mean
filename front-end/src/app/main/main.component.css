@@ -1,5 +1,21 @@
 body {
-  height: 100vh;
+  display: block;
   overflow: hidden;
-  background-color: lightcyan;
+  position: relative;
+  height: auto;
+  min-height: 100% !important;
+}
+
+.card-body {
+  width: 100vw;
+}
+
+#footer {
+  position: fixed;
+  height: 50px;
+  background-color: red;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
 }
