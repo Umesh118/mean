@@ -26,16 +26,17 @@
 <div class="container-fluid">
     <h3>Contacts</h3>
     <div class="row" *ngFor="let contact of contacts">
-        <div class="col-md-2">
+        <div class="col-2">
             {{contact.first_name}}
         </div>
-        <div class="col-md-2">
+        <div class="col-2">
             {{contact.last_name}}
         </div>
-        <div class="col-md-2">
+        <div class="col-2">
             {{contact.phone}}
         </div>
-        <div class="col-md-2">
+        <div class="col-2"></div>
+        <div class="col-2">
             <!-- <button class="btn btn-danger" (click)="deleteContact(contact._id)">Delete</button> -->
             <input type="button" class="btn btn-danger" value="Delete" (click)="deleteContact(contact._id)">
         </div>
