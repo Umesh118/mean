@@ -1,5 +1,5 @@
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <form #f="ngForm" (ngSubmit)="addContact()">
             <div class="form_group">
                 <label>First Name</label>
@@ -20,7 +20,7 @@
 </body>
 <br>
 <hr>
-<div class="container">
+<div class="container-fluid">
     <div class="row" *ngFor="let contact of contacts">
         <div class="col-md-2">
             {{contact.first_name}}

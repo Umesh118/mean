@@ -1,4 +1,6 @@
 <div class="container">
+    <h3>Feedback Form</h3>
+    <br>
     <form #f="ngForm" (ngSubmit)="sendFeedback()">
         <div class="mb-3">
             <div class="form-check form-check-inline">
@@ -46,6 +48,6 @@
 <hr>
 <div class="container">
     <div *ngFor="let feedback of feedbacks">
-        {{feedback.feedback}} means {{feedback.rating}}
+        {{feedback.rating}} means {{feedback.feedback}}
     </div>
 </div>

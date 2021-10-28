@@ -1,0 +1,42 @@
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" routerLink="/home" *ngIf="auth.loggedIn()">Carpediem</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" *ngIf="auth.loggedIn()" aria-current="page" routerLink="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" *ngIf="!auth.loggedIn()" aria-current="page" routerLink="/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" *ngIf="!auth.loggedIn()" aria-current="page"
+                            routerLink="/register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" *ngIf="auth.loggedIn()" routerLink="/feedback">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" *ngIf="auth.loggedIn()" routerLink="/contact">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn" *ngIf="auth.loggedIn()" (click)="auth.logoutUser()">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top: 10px;">
+        <router-outlet></router-outlet>
+    </div>
+</body>

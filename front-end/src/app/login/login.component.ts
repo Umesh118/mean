@@ -26,13 +26,13 @@ export class LoginComponent implements OnInit {
     // console.log('Your form data : ', form.value);
     this.api.postTypeRequest('login', this.registerData).subscribe(
       (res: any) => {
-        console.log(res);
+        // console.log(res);
         // console.log(res.status);
         // if (res) {
         // console.log(res);
         // this.auth.setDataInLocalStorage('userData', JSON.stringify(res.data));
         this.auth.setDataInLocalStorage('token', res.token);
-        this.router.navigate(['/contact']);
+        this.router.navigate(['/home']);
         // }
       },
       (err) => {

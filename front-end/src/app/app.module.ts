@@ -11,6 +11,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ApiService } from './services/api.service';
 import { AuthService } from './services/auth.service';
+import { MainComponent } from './main/main.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { AuthService } from './services/auth.service';
     FeedbackComponent,
     LoginComponent,
     RegisterComponent,
+    MainComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ApiService, AuthService],
